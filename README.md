@@ -1,12 +1,33 @@
-##servlet3-maven-archetype
+#servlet3-maven-archetype
 
 Project provides Maven archetype for creating plain simple Servlet 3 based web application
 
-Read more on github.io page:
-<http://maciejwalkowiak.github.io/servlet3-maven-archetype/>
+## Installation
 
-========================
-Check out also my development blog: <http://maciejwalkowiak.pl/blog>
+### Clone this repository
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/maciejwalkowiak/servlet3-maven-archetype/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+```
+$ git clone https://github.com/maciejwalkowiak/servlet3-maven-archetype.git
+```
 
+### Install it to local Maven repository
+
+```
+$ cd servlet3-maven-archetype
+$ mvn install
+```
+
+### Create project based on this archetype
+
+```
+$ mvn archetype:generate \
+    -DarchetypeGroupId=pl.maciejwalkowiak \
+    -DarchetypeArtifactId=servlet3-webapp-archetype \
+    -DarchetypeVersion=1.0.2
+```
+
+### Run project
+
+```
+$ mvn tomcat7:run
+```
